@@ -1,0 +1,253 @@
+/* Non responsive */
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+section{
+  background-color: rgb(85, 174, 205);
+  width: 100vw;
+  height: 100vh;
+  border: solid black 1px;
+}
+
+#header{
+  background-image: url("header.jpg");
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+
+#edgarbrand{
+  position: absolute;
+  left: 45vw;
+  top: 48vh;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#datascientist{
+  position: absolute;
+  left: 43vw;
+  top: 52vh;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#serious{
+  position: absolute;
+  left: 36vw;
+  top: 58vh;
+  font-style: italic;
+  font-size: 32px;
+}
+
+#rectangle {
+  position: absolute;
+  left: 33vw;
+  top: 38vh;
+  float: left;
+  font-size: 2.625em;
+  overflow: hidden;
+}
+
+#rectangle > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 44px;
+  background-image: url("header.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  border-left: 1px solid transparent;
+  animation: Fwrite 4s steps(25, start), Wbar 0.5s step-end infinite;
+  -webkit-animation: Fwrite 4s steps(25, start), Wbar 0.5s step-end infinite;
+  background-repeat: no-repeat;
+}
+  
+#rectangle > p:hover {
+  animation-play-state: paused;
+}
+  
+@keyframes Fwrite {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+  
+@keyframes Wbar {
+  0% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: black;
+  }
+  100% {
+    border-left-color: transparent;
+  }
+}
+  
+@-webkit-keyframes Fwrite {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+  
+@-webkit-keyframes Wbar {
+  0% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: black;
+  }
+  100% {
+    border-left-color: transparent;
+  }
+}
+
+h1{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+  margin-left: 0px;
+}
+
+#photo_tete{
+  background-image: url("edgar-pp.jpg");
+  width: 30vw;
+  height: 70vh;
+  background-size: 100%;
+  position: absolute;
+  left: 35vw;
+  background-repeat:no-repeat;
+}
+
+.texte{
+  font-size: 1.5em;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+
+.hidden {
+    opacity: 0;
+  }
+  
+.appear{
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+
+.barre{
+    height: 1vw;
+    background-color: white;
+}
+  
+.bordure{
+    height: 1vw;
+    border: solid black 1px;
+    width: 500px;
+}
+
+.grow{
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.grow:hover, .grow:focus, .grow:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.right{
+  text-align: right;
+}
+
+.center{
+  text-align: center;
+}
+
+#copyright{
+  position: absolute;
+  top: 599vh;
+  left: 45vw;
+}
+
+.barre{
+  position: absolute;
+  width: 30vw;
+  height: 20px;
+  background-color: grey;
+  margin-left: 10vw;
+}
+
+.barre_int{
+  position: absolute;
+  margin-top: 3px;
+  width: 20.72vw;
+  height: 14px;
+  background-color: orange;
+  margin-left: 10.2vw;
+  color: transparent;
+  overflow: hidden;
+}
+
+.barre_progression{
+  animation-duration: 3s;
+  animation-name: progression;
+  animation-iteration-count: 1;
+}
+
+.skills{
+  margin-top: 70px;
+  margin-bottom: 0px;
+  margin-left: 43vw;
+}
+
+@keyframes progression {
+  from { 
+    transform: scaleX(0); 
+  }
+  to   { 
+    transform: scaleX(1); 
+  }
+}
+
+.right_barre{
+  float: right;
+}
+
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: black;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.marge{
+  margin-left: 43vw;
+}
